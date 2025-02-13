@@ -1,5 +1,5 @@
 const { validationResult } = require("express-validator");
-const db = require("../models")
+const db = require("../db/models")
 
 const getAllMeetingRooms = async (req, res) => {
   const validate = validationResult(req)

@@ -5,7 +5,7 @@ const {
   updateMeetingRoomById,
   createMeetingRoom,
   deleteMeetingRoomById,
-} = require("../db/controllers/meetingRoomController")
+} = require("../controllers/meetingRoomController")
 
 router.get(
   "/room-meetings",
