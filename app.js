@@ -21,3 +21,11 @@ app.get("/", (req, res) => {
     message: "epicultura backend test",
   })
 })
+
+
+// -- Routes
+const meetingRoomRouter = require("./src/routes/meetingRoomRoutes")
+
+app.use('/api', meetingRoomRouter)
+
+module.exports = app

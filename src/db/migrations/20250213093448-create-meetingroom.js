@@ -14,7 +14,7 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      meetingRoom: {
+      meeting_room: {
         type: Sequelize.STRING,
         allowNull: false,
       },
@@ -22,28 +22,28 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
-      meetingDate: {
+      meeting_date: {
         type: Sequelize.DATEONLY,
         allowNull: false,
       },
-      waktuMulai: {
+      start_time: {
         type: Sequelize.TIME,
         allowNull: false,
       },
-      waktuSelesai: {
+      end_time: {
         type: Sequelize.TIME,
         allowNull: false,
       },
-      jumlahPeserta: {
+      number_of_participants: {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
-      jenisKonsumsi: {
+      type_of_consumption: {
         type: Sequelize.STRING,
         allowNull: true, // Bisa null jika tidak ada konsumsi
       },
-      nominalKonsumsi: {
-        type: Sequelize.INTEGER,
+      nominal_consumption: {
+        type: Sequelize.STRING,
         allowNull: true, // Bisa null jika tidak ada konsumsi
       },
       createdAt: {
